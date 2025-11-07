@@ -1,0 +1,168 @@
+/* ✨ ฟอนต์และพื้นหลังรวม */
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #ffeef6;
+  background-image: url('image/heart.jpg'); /* ใส่ภาพพื้นหลังของเธอ */
+  background-repeat: repeat;
+  background-size: contain;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+/* 💖 แถบด้านบน */
+.top-banner {
+  background-color: #f4a9c6;
+  color: white;
+  text-align: left;
+  padding: 10px 25px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+/* 🍰 ส่วนหัวหลัก */
+header {
+  background-color: #fff;
+  color: #ff5c8a;
+  padding: 20px;
+  margin-top: 0;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px #ffe3ed;
+  border-bottom: 4px solid #f9b3cb;
+}
+
+
+
+
+
+/* 🧁 กล่อง To Do List */
+.container {
+  background-color: #fff;
+  width: 340px;
+  margin: 50px auto;
+  border-radius: 25px;
+  padding: 25px;
+  border: 6px solid #fbc6d4;
+  box-shadow: 0 0 20px rgba(255,182,193,0.4);
+}
+
+.container h2 {
+  font-family: 'Fredoka One', cursive;
+  color: #ff6f9c;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px #fff;
+}
+
+/* 🎀 กล่องพิมพ์ข้อความ */
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: 2px solid #ffb6c1;
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 70%;
+  outline: none;
+  font-size: 1rem;
+  background-color: #fffafc;
+}
+
+button {
+  background-color: #ff7da5;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #ff5c8a;
+}
+
+/* 🍬 รายการงาน */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+li {
+  background-color: #ffe1eb;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+  background-color: #f9d6e1;
+}
+
+li button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+
+
+
+/* ===== สติ๊กเกอร์ด้านข้าง ===== */
+.side-gif {
+  position: fixed;
+  top: 50%;                  /* ให้อยู่ตรงกลางแนวตั้ง */
+  transform: translateY(-50%);
+  width: 120px;              /* ปรับขนาดได้ตามชอบ */
+  z-index: 1000;             /* ให้อยู่เหนือเนื้อหา */
+  pointer-events: none;      /* ให้คลิกทะลุได้ ไม่รบกวนปุ่มอื่น */
+  opacity: 0.9;              /* ให้โปร่งนิด ๆ */
+}
+
+.left-gif {
+  left: 20px;                /* ห่างจากขอบซ้าย */
+}
+
+.right-gif {
+  right: 20px;               /* ห่างจากขอบขวา */
+}
+
+
+
+
+
+/* ถ้าหน้าจอมือถือ — ซ่อนหรือลดขนาด */
+@media (max-width: 768px) {
+  .side-gif {
+    width: 80px;
+    opacity: 0.7;
+  }
+}
+
+
+.task {
+  background-color: #fff0f5;
+  border-radius: 12px;
+  padding: 10px 15px;
+  box-shadow: 0 3px 8px rgba(197, 52, 101, 0.3);
+}
